@@ -10,7 +10,7 @@ openai.api_key = os.environ.get("OPENAI_API_KEY")
 def generate_concept():
     prompt = """Create a unique and engaging Twitter post concept related to one of the following themes: artificial intelligence, technology trends, entrepreneurship, or personal development.
     The tweet should be concise, informative, and spark interest among the target audience. Ensure the content is original and relevant to Justin Merrell's personal brand and experiences.
-    Do not mention Justin Merrell by name, if needed use the first person pronoun "I" or "me". Limit the length to 200 characters, do not wrap the concept in quotes.
+    Do not mention Justin Merrell by name, if needed use the first person pronoun "I" or "me". Limit the length to 185 characters, do not wrap the concept in quotes.
 
     Justin Merrell context:
     Justin Merrell is a software developer and entrepreneur with diverse experiences, including dropping out of college, founding a successful makerspace, and embracing a minimalistic lifestyle.
@@ -30,7 +30,7 @@ def generate_concept():
 def format_concept(concept):
     prompt = f"""
     Using the concept "{concept}", create a unique and engaging Twitter post related to one of the following themes: artificial intelligence, technology trends, entrepreneurship, or personal development.
-    Only return the text of the tweet, do not wrap it in quotes, limit the length to 200 characters.
+    Only return the text of the tweet, do not wrap it in quotes, limit the length to 185 characters.
 
     Select one of the following formats:
     1. Question-based format:
