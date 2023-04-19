@@ -67,9 +67,18 @@ def add_disclaimer(tweet_text):
 
 
 def get_tweet():
-    concept, concept_prompt = generate_concept()
-    tweet, tweet_prompt = format_concept(concept)
+    max_attempts = 3
+    attempts = 0
 
-    tweet = add_disclaimer(tweet)
+    while attempts < max_attempts:
+        concept, concept_prompt = generate_concept()
+        tweet, tweet_prompt = format_concept(concept)
+        tweet = add_disclaimer(tweet)
 
-    return tweet
+        if len(tweet) <= 280:
+            return tweet
+        else:
+            attempts += 1
+
+    # If the function reaches this point, all 3 attempts failed to generate a tweet shorter than 280 characters.
+    raise ValueError("Unable to create a tweet within the character limit after 3 attempts.")
