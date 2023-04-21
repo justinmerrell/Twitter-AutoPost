@@ -55,6 +55,8 @@ def get_disclaimer():
     # Inject GitHub link into the disclaimer
     disclaimer.replace("{{GITHUB_USERNAME}}", os.environ.get("GITHUB_USERNAME"))
 
+    disclaimer = "\n\n" + disclaimer
+
     return disclaimer
 
 
