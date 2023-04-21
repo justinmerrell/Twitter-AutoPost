@@ -20,26 +20,24 @@ Twitter AutoPost is a Python script that automatically posts tweets to your Twit
 
 1. Clone the repository:
 
-git clone https://github.com/justinmerrell/Twitter-AutoPost.git
-
+    `git clone https://github.com/justinmerrell/Twitter-AutoPost.git`
 
 2. Change the directory:
 
-cd Twitter-AutoPost
-
+    `cd Twitter-AutoPost`
 
 3. Install the required packages:
 
-pip install -r requirements.txt
-
+    `pip install -r requirements.txt`
 
 4. Create a `.env` file in the project root directory and add your Twitter API credentials:
 
-TWITTER_CONSUMER_KEY=<your_consumer_key>
-TWITTER_CONSUMER_SECRET=<your_consumer_secret>
-TWITTER_ACCESS_TOKEN=<your_access_token>
-TWITTER_ACCESS_TOKEN_SECRET=<your_access_token_secret>
-
+    ```bash
+    TWITTER_CONSUMER_KEY=<your_consumer_key>
+    TWITTER_CONSUMER_SECRET=<your_consumer_secret>
+    TWITTER_ACCESS_TOKEN=<your_access_token>
+    TWITTER_ACCESS_TOKEN_SECRET=<your_access_token_secret>
+    ```
 
 5. Customize the `get_tweet()` function in `tweet_former.py` to generate your desired tweet content.
 
@@ -51,6 +49,13 @@ python tweet.py
 
 
 The script will fetch a tweet from the `get_tweet()` function, add the disclaimer, and post the tweet to your Twitter account.
+
+## Customizing
+
+You can customize the prompts that are used to generate the Tweets, as well as the disclaimer that is added to each Tweet. Under the `prompts` folder you will find the following files:
+
+- `concept.txt` - This file contains the prompt that is used to generate the concept for the Tweet.
+- `structure.txt` - This file contains the prompt that is used to generate the structure for the Tweet.
 
 ## Contributing
 

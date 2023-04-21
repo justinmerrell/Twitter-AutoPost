@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Activate the virtual environment
-source /root/automation/Twitter-AutoPost/env/bin/activate
+source /opt/Twitter-AutoPost/env/bin/activate
 
 # Call the main.py script
-python /root/automation/Twitter-AutoPost/tweet.py
+cd /opt/Twitter-AutoPost && /opt/Twitter-AutoPost/env/bin/python tweet.py
 
 # Deactivate the virtual environment
 deactivate
