@@ -30,12 +30,12 @@ def format_concept(concept):
         prompt = structure_prompt_file.read()
 
     # Inject the concept into the prompt
-    prompt.replace("{{CONCEPT}}", concept)
+    prompt = prompt.replace("{{CONCEPT}}", concept)
 
     # Inject the tweet length into the prompt
     disclaimer = get_disclaimer()
-    tweet_length = str(280 - len(disclaimer) - 10)
-    prompt.replace("{{TWEET_LENGTH}}", tweet_length)
+    tweet_length = str(280 - len(disclaimer) - 1)
+    prompt = prompt.replace("{{TWEET_LENGTH}}", tweet_length)
 
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
@@ -53,7 +53,7 @@ def get_disclaimer():
         disclaimer = disclaimer_prompt_file.read()
 
     # Inject GitHub link into the disclaimer
-    disclaimer.replace("{{GITHUB_USERNAME}}", os.environ.get("GITHUB_USERNAME"))
+    disclaimer = disclaimer.replace("{{GITHUB_USERNAME}}", os.environ.get("GITHUB_USERNAME"))
 
     disclaimer = "\n\n" + disclaimer
 
