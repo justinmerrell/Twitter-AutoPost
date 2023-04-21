@@ -34,7 +34,7 @@ def format_concept(concept):
 
     # Inject the tweet length into the prompt
     disclaimer = get_disclaimer()
-    tweet_length = str(280 - len(disclaimer) - 5)
+    tweet_length = str(280 - len(disclaimer) - 10)
     prompt.replace("{{TWEET_LENGTH}}", tweet_length)
 
     response = openai.ChatCompletion.create(
