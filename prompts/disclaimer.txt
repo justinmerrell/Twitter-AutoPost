@@ -1,1 +1,1 @@
-\n\n🧠 AI-generated | Code: {{GITHUB_PROFILE_URL}} | Consider following on GitHub 💻
+🧠 AI-generated | Code: github.com/{{GITHUB_USERNAME}} | Consider following on GitHub 💻

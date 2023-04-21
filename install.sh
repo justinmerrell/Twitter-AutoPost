@@ -14,7 +14,8 @@ pip install -r requirements.txt
 chmod +x run.sh
 
 # Add or update the cron job
-(crontab -l 2>/dev/null || true; echo "0 0 * * * /opt/Twitter-AutoPost/run.sh") | crontab -
+(crontab -l 2>/dev/null || true; echo "0 0 * * * /opt/Twitter-AutoPost/run.sh > /opt/Twitter-AutoPost/output.log 2> /opt/Twitter-AutoPost/error.log
+") | crontab -
 
 # Deactivate the virtual environment
 deactivate

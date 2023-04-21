@@ -53,7 +53,7 @@ def get_disclaimer():
         disclaimer = disclaimer_prompt_file.read()
 
     # Inject GitHub link into the disclaimer
-    disclaimer.replace("{{GITHUB_PROFILE_URL}}", os.environ.get("GITHUB_PROFILE_URL"))
+    disclaimer.replace("{{GITHUB_USERNAME}}", os.environ.get("GITHUB_USERNAME"))
 
     return disclaimer
 
@@ -63,7 +63,7 @@ def add_disclaimer(tweet_text):
     Add the disclaimer to the end of the tweet
     '''
     disclaimer = get_disclaimer()
-    return tweet_text + disclaimer
+    return tweet_text + "\n\n" + disclaimer
 
 
 def get_tweet():
