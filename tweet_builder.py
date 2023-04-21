@@ -72,7 +72,7 @@ def get_tweet():
     '''
     Generate a tweet
     '''
-    max_attempts = 5
+    max_attempts = 10
     attempts = 0
 
     while attempts < max_attempts:
@@ -86,7 +86,7 @@ def get_tweet():
             attempts += 1
 
     # If the function reaches this point, all attempts failed to generate a tweet shorter than 280 characters.
-    raise ValueError("Unable to create a tweet within the character limit after 5 attempts.")
+    raise ValueError("Unable to create a tweet within the character limit after 10 attempts.")
 
 
 if __name__ == "__main__":
