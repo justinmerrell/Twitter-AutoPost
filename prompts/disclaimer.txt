@@ -1,1 +1,1 @@
-🧠 AI-generated | #opensource github.com/{{GITHUB_USERNAME}} | Consider following on GitHub 💻
+🧠 AI-generated 🤖 | github.com/{{GITHUB_USERNAME}} | 👉 Follow on GitHub 💻
