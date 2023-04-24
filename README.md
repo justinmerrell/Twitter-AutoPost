@@ -33,10 +33,18 @@ Twitter AutoPost is a Python script that automatically posts tweets to your Twit
 4. Create a `.env` file in the project root directory and add your Twitter API credentials:
 
     ```bash
+    OPENAI_API_KEY=<your_api_key>
+
     TWITTER_CONSUMER_KEY=<your_consumer_key>
     TWITTER_CONSUMER_SECRET=<your_consumer_secret>
+
     TWITTER_ACCESS_TOKEN=<your_access_token>
     TWITTER_ACCESS_TOKEN_SECRET=<your_access_token_secret>
+
+    CASHED_ACCESS_TOKEN=<your_cashed_access_token>
+    CASHED_ACCESS_SECRET=<your_cashed_access_secret>
+
+    GITHUB_USERNAME=<your_github_username>
     ```
 
 5. Customize the `get_tweet()` function in `tweet_former.py` to generate your desired tweet content.
