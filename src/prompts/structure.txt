@@ -1,0 +1,78 @@
+With the given concept "{{CONCEPT}}", construct an engaging Twitter post that resonates with the theme embedded in the concept.
+Return only the tweet content, excluding quotes, style mentions, or other extra information. Ensure the content stays within {{TWEET_LENGTH}} characters.
+
+Consider the following while crafting the content:
+- Emojis are a great way to infuse personality, but use them sparingly to maintain a professional tone.
+- Strive for authenticity and a conversational style to make the tweets engaging and relatable.
+
+Choose one of these formats that best suits the concept:
+
+1. Expert Insight:
+    - Kick-off with a practical expert advice or an insightful observation that mirrors personal experience.
+    - Provide a short commentary or perspective that feels genuine and relatable.
+    - Encourage dialogue with an engaging question and sprinkle some relevant hashtags. Emojis can be used sparingly to add a touch of personality.
+
+    Example: Few things boost productivity like a clean workspace. It's not just about organization, it's about peace of mind. Do you have a cleaning routine for your workspace? 🧹 #CleanSpace #Productivity
+
+2. Thought Provoker:
+    - Begin with a powerful statement that prompts deep thinking and feels personally meaningful.
+    - Elaborate on the idea with authenticity.
+    - Propel conversation with a related question, complemented by relevant hashtags. A fitting emoji can amplify the tone.
+
+    Example: Busyness isn't a badge of honor, it's a cry for prioritization. More doesn't always mean better. How do you prioritize your tasks? 📝 #Productivity #Priorities
+
+3. Personal Journey:
+    - Share a meaningful snippet from your personal journey that's connected to the concept.
+    - Extract a universal lesson or insight that feels genuine and personally learned.
+    - Engage readers by inviting them to share similar experiences, backed by suitable hashtags. An appropriate emoji can evoke emotion.
+
+    Example: I used to believe in the "I'll sleep when I'm dead" mentality. Turns out, quality sleep is a productivity powerhouse. Do you ensure you get enough sleep? 💤 #Productivity #SleepWell
+
+4. Forward-Thinking:
+    - Start with a well-thought-out prediction or an upcoming trend related to the concept.
+    - Share your personal perspective on the future implications.
+    - Encourage dialogue with an engaging question, backed by pertinent hashtags. Emojis can be used to visualize the future scenario.
+
+    Example: The future of work may be more about balance than burnout. Could a 4-day workweek be our new norm? What are your thoughts? ⏳ #FutureOfWork #Productivity
+
+5. Book Nook:
+    - Recommend a book or resource that you've found personally enlightening.
+    - Extract a key insight from the resource and share your personal takeaway.
+    - Invite your audience to share their favorites, with appropriate hashtags. A book emoji can make the recommendation more lively.
+
+    Example: "The One Thing" by Gary Keller gave me a fresh perspective on focus. It's about less is more. What book changed your view on productivity? 📖 #Productivity #MustReads
+
+6. Paradigm Shift:
+    - Propose a counter-intuitive idea or a new way of thinking that you've personally embraced.
+    - Discuss its impact briefly and authentically.
+    - Foster conversation with a stimulating question, supplemented with relevant hashtags. Emojis can be used to emphasize the shift.
+
+    Example: It's time to replace our endless to-do lists with a 'stop doing' list. Focus comes from knowing what to avoid. What would be on your 'stop doing' list? 🚫 #Productivity #Focus
+
+7. Insight or Tip-Based:
+    - Share a practical tip or insight that you've personally found useful.
+    - Offer a brief explanation or example that reinforces its real-world applicability.
+    - Invite readers to share their own tips, along with relevant hashtags. An appropriate emoji can add color.
+
+    Example: One of my best productivity boosters is a simple, tech-free break. Sometimes, unplugging is the best way to recharge. What's your go-to productivity booster? 🔌 #Unplug #ProductivityTips
+
+8. Storytelling:
+    - Narrate a short, relatable personal anecdote or story that's linked to the concept.
+    - Highlight the lesson learned or takeaway in a personal and engaging way.
+    - Encourage readers to share their own experiences, with suitable emojis and hashtags.
+
+    Example: I once missed an important deadline, all because of a last-minute Netflix binge. Lesson learned: balance is key. Ever had a similar wake-up call? 🎯 #Productivity #Balance
+
+9. Statistic or Fact-Based:
+    - Begin with a striking statistic or fact that resonates with your experience or understanding.
+    - Provide a short, thoughtful commentary or perspective on the statistic.
+    - Invite readers to share their thoughts, complemented by pertinent hashtags. Emojis can help make stats more digestible.
+
+    Example: A recent study shows taking regular short breaks can increase productivity by 30%. It's all about pacing, not racing. Do you take regular breaks? ⏲️ #ProductivityStats #WorkSmart
+
+10. Motivational:
+    - Start with a motivational quote or mantra that you find personally inspiring.
+    - Add a brief commentary on how it applies to the concept.
+    - Encourage readers to share their personal mantras, using suitable hashtags. A fitting emoji can help evoke the motivational mood.
+
+    Example: "The secret of getting ahead is getting started." Getting started can be the hardest part, but it's half the battle won. What gets you started? 🚀 #Productivity #Motivation

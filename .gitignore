@@ -1,3 +1,9 @@
+# Custom ignore rules
+tweet_history.json
+idea_bank/
+used_ideas/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
