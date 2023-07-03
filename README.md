@@ -12,11 +12,23 @@ Twitter AutoPost is a Python script that automatically posts tweets to your Twit
 ## Requirements
 
 - Python 3.6 or higher
-- `requests`
-- `requests_oauthlib`
-- `python-dotenv`
+- packages listed in `requirements.txt`
 
-## Installation
+## Quick Installation (Cron)
+
+1. Clone the repository:
+
+    `git clone https://github.com/justinmerrell/Twitter-AutoPost.git /opt/Twitter-AutoPost`
+
+2. Change the directory:
+
+    `cd /opt/Twitter-AutoPost`
+
+3. Run the installer script in the cron directory:
+
+    `./cron/install.sh`
+
+## Development Setup
 
 1. Clone the repository:
 
@@ -29,8 +41,6 @@ Twitter AutoPost is a Python script that automatically posts tweets to your Twit
 3. Install the required packages:
 
     `pip install -r requirements.txt`
-
-4. Create a `.env` file in the project root directory and add your Twitter API credentials:
 
     ```bash
     OPENAI_API_KEY=<your_api_key>
@@ -45,18 +55,16 @@ Twitter AutoPost is a Python script that automatically posts tweets to your Twit
     CASHED_ACCESS_SECRET=<your_cashed_access_secret>
 
     GITHUB_USERNAME=<your_github_username>
-    ```
 
-5. Customize the `get_tweet()` function in `tweet_former.py` to generate your desired tweet content.
+    HEALTHCHECKS_URL=<your_healthchecks_url>
+    HEALTHCHECKS_ID=<your_healthchecks_id>
+    ```
 
 ## Usage
 
 Run the script with the following command:
 
-python tweet.py
-
-
-The script will fetch a tweet from the `get_tweet()` function, add the disclaimer, and post the tweet to your Twitter account.
+`python tweet.py`
 
 ## Customizing
 
@@ -72,10 +80,3 @@ If you'd like to contribute to this project, please feel free to submit a pull r
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-
-## Acknowledgements
-
-- Twitter API
-- `requests` library
-- `requests_oauthlib` library
-- `python-dotenv` library
