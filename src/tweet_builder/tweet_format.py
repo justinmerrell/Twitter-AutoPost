@@ -13,7 +13,7 @@ def get_disclaimer():
     '''
     Retrieve the disclaimer text.
     '''
-    with open("src/prompts/disclaimer.txt", "r", encoding="utf-8") as disclaimer_file:
+    with open("./src/prompts/disclaimer.txt", "r", encoding="utf-8") as disclaimer_file:
         disclaimer = disclaimer_file.read()
         disclaimer = disclaimer.replace("{{GITHUB_USERNAME}}", os.getenv("GITHUB_USERNAME"))
 
@@ -60,7 +60,7 @@ def structure(concept):
     """
     Format the concept into a tweet using the Structure Prompt.
     """
-    with open("src/prompts/structure.txt", "r", encoding="utf-8") as structure_prompt_file:
+    with open("./src/prompts/structure.txt", "r", encoding="utf-8") as structure_prompt_file:
         prompt = structure_prompt_file.read().replace("{{CONCEPT}}", draft_tweet(concept)[0])
 
     # Inject the tweet length into the prompt

@@ -39,7 +39,7 @@ def fetch_idea():
         return None
 
     idea = random.choice(ideas)
-    with open(f"{IDEA_BANK}/{idea}", "r", encoding="utf-8") as idea_file:
+    with open(f"./{IDEA_BANK}/{idea}", "r", encoding="utf-8") as idea_file:
         idea_content = idea_file.read()
 
     # Move the used idea to a separate folder
@@ -53,7 +53,7 @@ def generate_concept():
     '''
     Generate the concept for the tweet.
     '''
-    with open("src/prompts/concept_system.txt", "r", encoding="utf-8") as prompt_file:
+    with open("./src/prompts/concept_system.txt", "r", encoding="utf-8") as prompt_file:
         system_prompt = prompt_file.read()
 
     initial_idea = fetch_idea()
