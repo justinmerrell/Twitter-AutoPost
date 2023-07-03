@@ -1,8 +1,10 @@
 import os
 import logging
-
 import requests
 
+from dotenv import load_dotenv
+
+load_dotenv()
 logger = logging.getLogger("tweet")
 
 HEALTH_URL = os.getenv("HEALTHCHECKS_URL", "http://localhost:8000/health")
@@ -19,7 +21,7 @@ def send_healthcheck(fail=False):
 
     if fail:
         logging.info("Sending failed healthcheck.")
-        requests.get(f"{HEALTH_URL}/{HEALTH_ID}/fail")
+        requests.get(f"{HEALTH_URL}/{HEALTH_ID}/fail", timeout=5)
         return
 
     logging.info("Sending successful healthcheck.")

@@ -93,6 +93,8 @@ def main(live=False):
         else:
             logger.info("Test mode. The tweet will was not be posted.")
 
+        send_healthcheck()
+
     except Exception as err:
         logger.error(err)
         send_healthcheck(fail=True)
