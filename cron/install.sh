@@ -24,9 +24,9 @@ pip install -r requirements.txt
 # Add or update the cron job
 # If "--live" is passed to the script, include it in the run.sh call
 if [[ $* == *--live* ]]; then
-    (crontab -l 2>/dev/null || true; echo "0 0 * * * bash /opt/Twitter-AutoPost/cron/run.sh --live > /opt/Twitter-AutoPost/output.log 2> /opt/Twitter-AutoPost/error.log") | crontab -
+    (crontab -l 2>/dev/null || true; echo "0 0 * * 0 bash /opt/Twitter-AutoPost/cron/run.sh --live > /opt/Twitter-AutoPost/output.log 2> /opt/Twitter-AutoPost/error.log") | crontab -
 else
-    (crontab -l 2>/dev/null || true; echo "0 0 * * * bash /opt/Twitter-AutoPost/cron/run.sh > /opt/Twitter-AutoPost/output.log 2> /opt/Twitter-AutoPost/error.log") | crontab -
+    (crontab -l 2>/dev/null || true; echo "0 0 * * 0 bash /opt/Twitter-AutoPost/cron/run.sh > /opt/Twitter-AutoPost/output.log 2> /opt/Twitter-AutoPost/error.log") | crontab -
 fi
 
 # Deactivate the virtual environment
