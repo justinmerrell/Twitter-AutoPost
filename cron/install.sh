@@ -12,10 +12,10 @@ then
 fi
 
 # Remove the existing virtual environment if it exists
-rm -rf env
+rm -rf /opt/Twitter-AutoPost/env
 
 # Create a new virtual environment in the correct location and activate it
-/opt/Twitter-AutoPost/env/bin/python3.11 -m venv /opt/Twitter-AutoPost/env
+python3.11 -m venv /opt/Twitter-AutoPost/env
 source /opt/Twitter-AutoPost/env/bin/activate
 
 # Install requirements.txt
