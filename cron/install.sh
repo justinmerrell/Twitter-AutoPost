@@ -11,9 +11,12 @@ then
     exit
 fi
 
-# Create a virtual environment and activate it
-python3.11 -m venv env
-source env/bin/activate
+# Remove the existing virtual environment if it exists
+rm -rf env
+
+# Create a new virtual environment in the correct location and activate it
+/opt/Twitter-AutoPost/env/bin/python3.11 -m venv /opt/Twitter-AutoPost/env
+source /opt/Twitter-AutoPost/env/bin/activate
 
 # Install requirements.txt
 pip install -r requirements.txt
