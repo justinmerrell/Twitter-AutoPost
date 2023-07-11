@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
-MODEL_NAME = "gpt-3.5-turbo"
+MODEL_NAME = "gpt-4"
 
 
 def get_disclaimer():

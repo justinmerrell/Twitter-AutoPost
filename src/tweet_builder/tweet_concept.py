@@ -23,7 +23,7 @@ logger = logging.getLogger("tweet")
 # ---------------------------------------------------------------------------- #
 IDEA_BANK = "idea_bank"
 USED_IDEAS = "used_ideas"
-MODEL_NAME = "gpt-3.5-turbo"
+MODEL_NAME = "gpt-4"
 
 # ---------------------------------------------------------------------------- #
 #                                   Functions                                  #
